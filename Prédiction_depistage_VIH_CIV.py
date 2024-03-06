@@ -1,6 +1,6 @@
 import pandas as pd                                   # pour l'importation et le conditionnement des données en dataframe
 import numpy as np                                    # pour les calculs numériques
-#import seaborn as sns                                 # pour l'affichage des graphiques
+import seaborn as sns                                 # pour l'affichage des graphiques
 import matplotlib.pyplot as plt
 import tensorflow as tf                               # pour l'entrainement du réseau des neurones artificiels
 import streamlit as st
@@ -139,9 +139,9 @@ elif page == "Déscription des données" :
     
     if clicked1 :
         
-        #fig3, ax3 = plt.subplots()
-        #ax3 = sns.heatmap(df2.corr())
-        #st.pyplot(fig3)
+        fig3, ax3 = plt.subplots()
+        ax3 = sns.heatmap(df2.corr())
+        st.pyplot(fig3)
 
     
 
